@@ -1,0 +1,222 @@
+/* variables */
+:root {
+  /* dark theme colors */
+  --color-dark: #f0f1f1;
+  --background-color-dark: #212121;
+  --cell-background-dark: #222629;
+  --border-color-dark: #505050;
+  --titles-color-dark: rgb(252, 71, 71);
+
+  /* light theme colors */
+  --color-light: #212121;
+  --background-color-light: #f0f1f1;
+}
+
+body {
+  background-color: var(--background-color-dark);
+}
+
+* {
+  color: var(--color-dark);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+.menu-container {
+  border-bottom: 1px solid var(--border-color-dark);
+  padding: 1em 1em;
+
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  width: 800px;
+  height: auto;
+  padding: 0em 0em;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-right {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 300;
+}
+
+.resume {
+  margin-left: 1em;
+}
+
+/* theme */
+.theme-button {
+  font-weight: 300;
+
+  background-color: var(--background-color-dark);
+  color: var(--titles-color-dark);
+  border: 0px solid;
+  border-radius: 3px;
+
+  margin-left: 1em;
+}
+
+.theme-button:hover {
+  background-color: var(--titles-color-dark);
+  color: var(--background-color-dark);
+}
+
+.about {
+  margin-left: 1em;
+}
+
+.basics-container {
+  /* margin-top: 2em; */
+  padding: 1em 1em;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.basics {
+  background-color: var(--cell-background-dark);
+  border: 1px solid var(--border-color-dark);
+  border-radius: 3px;
+  width: 800px;
+  height: auto;
+  padding: 1em 1em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.basics-item {
+  margin: 5px 2px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.basics-item-left {
+  font-weight: bold;
+  width: 8em;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.basics-item-right {
+  font-weight: 300;
+  margin-left: 2em;
+}
+
+.basics-title {
+  color: var(--titles-color-dark);
+  font-family: sans-serif;
+  font-size: x-large;
+  margin-bottom: 9px;
+}
+
+.education {
+  background-color: var(--cell-background-dark);
+  border: 1px solid var(--border-color-dark);
+  border-radius: 3px;
+  width: 800px;
+  height: auto;
+  padding: 1em 1em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.education-item {
+  margin: 5px 2px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.education-item-left {
+  font-weight: bold;
+  width: 8em;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.education-item-right {
+  font-weight: 300;
+  margin-left: 2em;
+}
+
+.education-title {
+  color: var(--titles-color-dark);
+  font-family: sans-serif;
+  font-size: x-large;
+  margin-bottom: 9px;
+}
+
+.divider {
+  width: 90%;
+  min-width: 0px;
+
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  border: 1px solid var(--border-color-dark);
+  align-self: center;
+}
+
+.study-title {
+  color: var(--titles-color-dark);
+  font-weight: bold;
+}
+
+.institution-name {
+  font-style: italic;
+}
+
+.courses-list {
+  list-style-position: inside;
+  list-style-type: "❖ ";
+  margin-top: 0.5em;
+  padding-left: 0;
+}
+
+.work-description {
+  margin-top: 0.5em;
+}
+
+.languages {
+  background-color: var(--cell-background-dark);
+  border: 1px solid var(--border-color-dark);
+  border-radius: 3px;
+  width: 800px;
+  height: auto;
+  padding: 1em 1em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.language-list {
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  font-weight: 300;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.language-name {
+  font-weight: 500;
+  color: var(--titles-color-dark);
+}
