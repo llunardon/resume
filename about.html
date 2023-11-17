@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <!-- top menu -->
+    <div class="menu-container">
+      <div class="menu">
+        <div class="menu-left">
+          <button class="theme-button light" onclick="setTheme('light')">
+            <input type="image" id="sun" src="images/sun.png" />
+          </button>
+
+          <button class="theme-button dark" onclick="setTheme('dark')">
+            <input type="image" id="moon" src="images/moon.png" />
+          </button>
+        </div>
+
+        <div class="menu-right">
+          <div class="about"><a href="about.html">about</a></div>
+          <div class="resume"><a href="index.html">resume</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- basic info -->
+    <div class="basics-container">
+      <div class="basics">
+        <div class="basics-item basics-title">About Me</div>
+
+        <div class="basics-item">
+          <div class="basics-item-right">
+            My name is Lorenzo, I studied engineering at the University of
+            Padova from 2017 until 2024.
+          </div>
+        </div>
+
+        <div class="divider"></div>
+        <div class="basics-item">
+          <div class="basics-item-right">
+            I like technology, especially Artificial Intelligence. Other
+            passions include music (I'm learning to play piano) and working out.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
