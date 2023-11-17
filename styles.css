@@ -68,6 +68,29 @@ a:hover {
   color: var(--titles-color);
 }
 
+/* github logo */
+#gh-logo {
+  object-fit: cover;
+  height: 1.8em;
+  width: 1.8em;
+}
+/* 
+.gh-logo.light {
+  display: none;
+}
+
+.light .gh-logo.light {
+  display: block;
+}
+
+.light .gh-logo.dark {
+  display: none;
+}
+
+.ligth .gh-logo.light {
+  display: block;
+} */
+
 /* theme button*/
 .theme-button {
   height: 2.5em;

@@ -1,5 +1,5 @@
-### Just my curriculum
+## Just my curriculum
 
 ### TODO:
 
-- Add links to about and resume sections
+- Make theme change stay after changing pages
