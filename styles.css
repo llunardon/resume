@@ -57,6 +57,8 @@ body {
 
 /* theme */
 .theme-button {
+  margin-left: 1em;
+
   font-weight: 300;
 
   background-color: var(--background-color);
@@ -64,12 +66,40 @@ body {
   border: 0px solid;
   border-radius: 3px;
 
-  margin-left: 1em;
+  cursor: pointer;
 }
 
 .theme-button:hover {
   background-color: var(--titles-color);
   color: var(--background-color);
+}
+
+.theme-button.dark {
+  display: none;
+}
+
+.light .theme-button.dark {
+  display: block;
+  background-color: var(--background-color);
+}
+
+.light .theme-button.dark:hover {
+  display: block;
+  background-color: var(--titles-color);
+  color: var(--background-color);
+}
+
+.light .theme-button.light {
+  display: none;
+}
+
+.dark .theme-btn.light {
+  display: block;
+  background-color: var(--background-color);
+}
+
+.dark .theme-button.dark {
+  display: none;
 }
 
 .about {
