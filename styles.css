@@ -4,14 +4,14 @@
   --color: #f0f1f1;
   --background-color: #212121;
   --cell-background: #222629;
-  --border-color: #505050;
+  --border-color: #505060;
   --titles-color: rgb(252, 71, 71);
 }
 :root.light {
-  --color: #131313;
+  --color: #111511;
   --background-color: #e7e7e7;
   --cell-background: #f1f1f1;
-  --border-color: #aaaaaa;
+  --border-color: #bbbbbb;
   --titles-color: rgb(119, 56, 56);
 }
 
@@ -28,11 +28,19 @@ body {
 }
 
 .menu-container {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: var(--background-color);
   border-bottom: 1px solid var(--border-color);
   padding: 1em 1em;
 
   display: flex;
   justify-content: center;
+}
+
+.menu-container + div {
+  margin-top: 5em;
 }
 
 .menu {
@@ -58,8 +66,8 @@ body {
 .about {
   margin-left: 1em;
 }
-/* links */
 
+/* links */
 a {
   text-decoration: none;
 }
@@ -71,25 +79,9 @@ a:hover {
 /* github logo */
 #gh-logo {
   object-fit: cover;
-  height: 1.8em;
-  width: 1.8em;
+  height: 1.6em;
+  width: 1.6em;
 }
-/* 
-.gh-logo.light {
-  display: none;
-}
-
-.light .gh-logo.light {
-  display: block;
-}
-
-.light .gh-logo.dark {
-  display: none;
-}
-
-.ligth .gh-logo.light {
-  display: block;
-} */
 
 /* theme button*/
 .theme-button {
@@ -200,7 +192,7 @@ a:hover {
 
 .basics-title {
   color: var(--titles-color);
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: x-large;
   margin-bottom: 9px;
 }
@@ -239,7 +231,7 @@ a:hover {
 
 .education-title {
   color: var(--titles-color);
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: x-large;
   margin-bottom: 9px;
 }
@@ -248,8 +240,8 @@ a:hover {
   width: 90%;
   min-width: 0px;
 
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 
   border: 1px solid var(--border-color);
   align-self: center;
